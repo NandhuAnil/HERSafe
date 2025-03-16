@@ -4,7 +4,7 @@ import React from 'react'
 export default function newPassword() {
   return (
     <View>
-      <Text>newPassword</Text>
+      <Text>newPassword - Admin</Text>
     </View>
   )
 }
