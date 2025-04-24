@@ -1,134 +1,275 @@
 import {
-  ImageBackground,
+  ActivityIndicator,
+  Pressable,
+  SafeAreaView,
   StyleSheet,
-  Image,
   Text,
-  View,
   TextInput,
+  ToastAndroid,
   TouchableOpacity,
+  View,
 } from "react-native";
-import React, { useState } from "react";
-import { useRouter } from "expo-router";
+import React, { useEffect, useState } from "react";
 import { Colors } from "@/constants/Colors";
-import CustomButton from "@/components/Button";
+import { Ionicons } from "@expo/vector-icons";
+import Checkbox from "expo-checkbox";
+import { useRouter } from "expo-router";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+// import useAuth from "@/hooks/Auth.services";
 
 export default function login() {
   const router = useRouter();
-  const [email, setEmail] = useState({ value: "", error: "" });
-  const [password, setPassword] = useState({ value: "", error: "" });
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  // const { handleLogin, loading } = useAuth();
+  const [isPasswordShown, setIsPasswordShown] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+
+  useEffect(() => {
+    const loadCredentials = async () => {
+      try {
+        const savedEmail = await AsyncStorage.getItem('savedEmail');
+        const savedPassword = await AsyncStorage.getItem('savedPassword');
+        if (savedEmail && savedPassword) {
+          setEmail(savedEmail);
+          setPassword(savedPassword);
+          setIsChecked(true);
+        }
+      } catch (error) {
+        console.error('Failed to load credentials:', error);
+      }
+    };
+  
+    loadCredentials();
+  }, []);
+  
+  const onSubmit = async () => {
+    if (!email || !password) {
+      ToastAndroid.show('Please enter email and password', ToastAndroid.SHORT);
+      return;
+    }
+  
+    if (isChecked) {
+      // Save email and password
+      try {
+        await AsyncStorage.setItem('savedEmail', email);
+        await AsyncStorage.setItem('savedPassword', password);
+      } catch (error) {
+        console.error('Failed to save credentials:', error);
+      }
+    } else {
+      // Remove saved data if unchecked
+      try {
+        await AsyncStorage.removeItem('savedEmail');
+        await AsyncStorage.removeItem('savedPassword');
+      } catch (error) {
+        console.error('Failed to remove credentials:', error);
+      }
+    }
+  
+    // handleLogin(email, password);
+  };
+
   return (
-    <ImageBackground
-      source={require("../../assets/items/dot.png")}
-      resizeMode="repeat"
-      style={styles.background}
-    >
-      <View style={styles.container}>
-        <Image
-          source={require("../../assets/items/logo.png")}
-          style={styles.image}
-        />
-        <Text style={styles.header}>Hello.</Text>
-        {/* <Text style={styles.text}>
-          A starter app template for React Native Expo, featuring a ready-to-use
-          login screen.
-        </Text> */}
-        <TextInput
-          style={styles.input}
-          placeholder="Email"
-          returnKeyType="next"
-          value={email.value}
-          onChangeText={(text) => setEmail({ value: text, error: "" })}
-          autoCapitalize="none"
-          textContentType="emailAddress"
-          keyboardType="email-address"
-        />
-        <TextInput
-          style={styles.input}
-          placeholder="Password"
-          returnKeyType="done"
-          value={password.value}
-          onChangeText={(text) => setPassword({ value: text, error: "" })}
-          secureTextEntry
-        />
-        <View style={styles.forgotPassword}>
-          <TouchableOpacity onPress={() => router.push("/forgotPassword")}>
-            <Text style={styles.forgot}>Forgot your password ?</Text>
+    <SafeAreaView style={{ flex: 1, backgroundColor: Colors.white }}>
+      <View style={{ flex: 1, marginHorizontal: 22 }}>
+        <View style={{ marginVertical: 22 }}>
+          <Text
+            style={{
+              fontSize: 22,
+              fontWeight: "bold",
+              marginVertical: 12,
+              color: Colors.black,
+            }}
+          >
+            Hi Welcome Back ! 👋
+          </Text>
+
+          <Text
+            style={{
+              fontSize: 16,
+              color: Colors.black,
+            }}
+          >
+            Hello again you have been missed!
+          </Text>
+        </View>
+
+        <View style={{ marginBottom: 12 }}>
+          <Text
+            style={{
+              fontSize: 16,
+              fontWeight: 400,
+              marginVertical: 8,
+            }}
+          >
+            Email address
+          </Text>
+
+          <View
+            style={{
+              width: "100%",
+              height: 48,
+              borderColor: Colors.black,
+              borderWidth: 1,
+              borderRadius: 8,
+              alignItems: "center",
+              justifyContent: "center",
+              paddingLeft: 22,
+            }}
+          >
+            <TextInput
+              placeholder="Enter your email address"
+              placeholderTextColor={Colors.black}
+              value={email}
+              onChangeText={setEmail}
+              keyboardType="email-address"
+              autoCapitalize="none"
+              style={{
+                width: "100%",
+              }}
+              cursorColor={Colors.primary}
+            />
+          </View>
+        </View>
+
+        <View style={{ marginBottom: 12 }}>
+          <Text
+            style={{
+              fontSize: 16,
+              fontWeight: 400,
+              marginVertical: 8,
+            }}
+          >
+            Password
+          </Text>
+
+          <View
+            style={{
+              width: "100%",
+              height: 48,
+              borderColor: Colors.black,
+              borderWidth: 1,
+              borderRadius: 8,
+              alignItems: "center",
+              justifyContent: "center",
+              paddingLeft: 22,
+            }}
+          >
+            <TextInput
+              placeholder="Enter your password"
+              placeholderTextColor={Colors.black}
+              secureTextEntry={!isPasswordShown}
+              style={{
+                width: "100%",
+              }}
+              value={password}
+              onChangeText={setPassword}
+              cursorColor={Colors.primary}
+            />
+
+            <TouchableOpacity
+              onPress={() => setIsPasswordShown(!isPasswordShown)}
+              style={{
+                position: "absolute",
+                right: 12,
+              }}
+            >
+              {isPasswordShown == true ? (
+                <Ionicons name="eye-off" size={24} color={Colors.black} />
+              ) : (
+                <Ionicons name="eye" size={24} color={Colors.black} />
+              )}
+            </TouchableOpacity>
+          </View>
+        </View>
+
+        <View
+          style={{
+            flexDirection: "row",
+            marginVertical: 6,
+          }}
+        >
+          <Checkbox
+            style={{ marginRight: 8 }}
+            value={isChecked}
+            onValueChange={setIsChecked}
+            color={isChecked ? Colors.primary : undefined}
+          />
+
+          <Text>Remember Me</Text>
+        </View>
+        <View
+          style={{
+            paddingTop: 10 * 6,
+            gap: 10,
+          }}
+        >
+          <TouchableOpacity
+            style={[styles.button, ]} //loading && styles.buttonDisabled
+            onPress={onSubmit}
+            // disabled={loading}
+            activeOpacity={0.7}
+            // onPress={() => router.replace("/(tabs)/index")}
+          >
+            <Text style={styles.buttonText}>Login</Text>
           </TouchableOpacity>
         </View>
-        <CustomButton
-          title="Log in"
-          onPress={() => router.push("/login")}
-          mode="outlined"
-        />
-        <View style={styles.row}>
-          <Text>You do not have an account yet ?</Text>
-        </View>
-        <View style={styles.row}>
-          <TouchableOpacity onPress={() => router.push("/signup")}>
-            <Text style={styles.link}>Create !</Text>
-          </TouchableOpacity>
+        
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            marginVertical: 22,
+          }}
+        >
+          <Text style={{ fontSize: 16, color: Colors.black }}>
+            Don't have an account ?{" "}
+          </Text>
+          <Pressable
+            onPress={() => router.push("/(auth)/signup")}
+          >
+            <Text
+              style={{
+                fontSize: 16,
+                color: Colors.primary,
+                fontWeight: "bold",
+                marginLeft: 6,
+              }}
+            >
+              Register
+            </Text>
+          </Pressable>
         </View>
       </View>
-    </ImageBackground>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  background: {
-    flex: 1,
+  button: {
+    backgroundColor: Colors.primary,
+    paddingVertical: 10 * 1.5,
+    paddingHorizontal: 10 * 2,
     width: "100%",
-    backgroundColor: Colors.light.background,
+    borderRadius: 10,
+    shadowColor: Colors.text,
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 6,
+    elevation: 6,
+    opacity: 0.9,
   },
-  container: {
-    flex: 1,
-    padding: 20,
-    width: "100%",
-    maxWidth: 340,
-    alignSelf: "center",
-    alignItems: "center",
-    justifyContent: "center",
+  buttonDisabled: {
+    backgroundColor: Colors.iconBg,
   },
-  image: {
-    width: 110,
-    height: 110,
-    marginBottom: 8,
-  },
-  header: {
-    fontSize: 21,
-    color: Colors.light.primary,
-    fontWeight: "bold",
-    paddingVertical: 12,
-  },
-  text: {
-    fontSize: 15,
-    lineHeight: 21,
+  buttonText: {
+    color: Colors.background,
+    fontSize: 16,
     textAlign: "center",
-    marginBottom: 12,
-  },
-  forgotPassword: {
-    width: "100%",
-    alignItems: "flex-end",
-    marginBottom: 10,
-  },
-  row: {
-    flexDirection: "row",
-    marginTop: 4,
-  },
-  forgot: {
-    fontSize: 13,
-    color: Colors.light.secondary,
-  },
-  link: {
     fontWeight: "bold",
-    color: Colors.light.primary,
-  },
-  input: {
-    width: "100%",
-    height: 50,
-    borderColor: Colors.light.primary,
-    borderWidth: 1,
-    borderRadius: 8,
-    paddingHorizontal: 10,
-    marginBottom: 10,
-  },
+  }
 });

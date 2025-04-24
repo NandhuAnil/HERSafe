@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     width: "100%",
-    backgroundColor: Colors.light.background,
+    backgroundColor: Colors.background,
   },
   container: {
     flex: 1,
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 21,
-    color: Colors.light.primary,
+    color: Colors.primary,
     fontWeight: "bold",
     paddingVertical: 12,
   },
