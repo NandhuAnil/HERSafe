@@ -84,15 +84,15 @@ export default function HomeScreen() {
       ToastAndroid.show('No contacts or location available', ToastAndroid.SHORT);
       return;
     }
-  
+
     const payload = {
       contacts,
       message,
       location: `${location.latitude}, ${location.longitude}`,
     };
-  
+
     setLoading(true);
-  
+
     try {
       const response = await fetch('https://appsail-50026188699.development.catalystappsail.in/api/sos/send', {
         method: 'POST',
@@ -101,7 +101,7 @@ export default function HomeScreen() {
         },
         body: JSON.stringify(payload),
       });
-  
+
       // Check if the response is not OK (status code not in the range 200-299)
       if (!response.ok) {
         // Log the response status and the body content for further debugging
@@ -112,11 +112,11 @@ export default function HomeScreen() {
         Alert.alert('Error', `Server returned an error: ${response.status}. Check logs for details.`);
         return;
       }
-  
+
       // Get raw response text to check the content
       const text = await response.text();
       console.log('Raw response:', text);
-  
+
       let data;
       try {
         // Try to parse the response as JSON
@@ -127,9 +127,9 @@ export default function HomeScreen() {
         Alert.alert('Error', 'Failed to parse server response');
         return;
       }
-  
+
       setLoading(false);
-  
+
       // Handle the response data
       if (data.success) {
         Alert.alert('SOS sent successfully');
@@ -141,7 +141,7 @@ export default function HomeScreen() {
       } else {
         Alert.alert('Error sending SOS alert', data.message || 'Unknown error');
       }
-  
+
     } catch (error: any) {
       setLoading(false);
       console.log('Error sending SOS alert:', error.message);
@@ -203,26 +203,27 @@ export default function HomeScreen() {
             </TouchableOpacity>
           </View>
         </View>
-        <Text style={{textAlign: 'center', fontSize: 32, fontWeight: 900, color: Colors.primary, top: 80}}>HERSafe</Text>
-        <Text style={{textAlign: 'center', fontSize: 18, fontWeight: 500, color: Colors.black, top: 80}}>Press the button in <Text style={{ color: Colors.secondary }}>Emergency</Text></Text>       
-        <LinearGradient
-          colors={['#FF6347', '#FF4500']} // Gradient colors
-          start={{ x: 0, y: 0 }} // Gradient start position
-          end={{ x: 1, y: 1 }}   // Gradient end position
+        <Text style={{ textAlign: 'center', fontSize: 32, fontWeight: 900, color: Colors.primary, top: 80 }}>HERSafe</Text>
+        <Text style={{ textAlign: 'center', fontSize: 18, fontWeight: 500, color: Colors.black, top: 80 }}>Press the button in <Text style={{ color: Colors.secondary }}>Emergency</Text></Text>
+        <TouchableOpacity
+          onPress={handleSendSOS}
           style={styles.sosButtonStyle}
+          disabled={loading}
+          activeOpacity={0.8}
         >
-          <TouchableOpacity
-            onPress={handleSendSOS}
+          <LinearGradient
+            colors={['#FFEB3B', '#F44336']}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
             style={styles.buttonWrapper}
-            disabled={loading}
           >
             {loading ? (
               <Text style={styles.buttonText}>Sending...</Text>
             ) : (
-              <Text style={styles.buttonText}>Send sos</Text>
+              <Text style={styles.buttonText}>emergency SOS</Text>
             )}
-          </TouchableOpacity>
-        </LinearGradient>
+          </LinearGradient>
+        </TouchableOpacity>
       </ScrollView>
       <TouchableOpacity
         onPress={() => router.push("/chatbot")}
@@ -264,7 +265,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     shadowRadius: 15,
     alignSelf: 'center',
-    top: 120
+    top: 120,
+    overflow: 'hidden',
   },
   buttonWrapper: {
     width: '100%',
