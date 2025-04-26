@@ -1,0 +1,862 @@
+[
+ {
+  "question": "How can I quickly alert authorities if I'm in danger?",
+  "answer": "Use the SOS button in the app to immediately notify local authorities and your emergency contacts with your live location."
+ },
+ {
+  "question": "Can I contact the police through the app?",
+  "answer": "Yes, the app has a direct emergency contact feature that connects you to the nearest police station."
+ },
+ {
+  "question": "What should I do if I’m being followed?",
+  "answer": "Stay in well-lit, public areas, avoid shortcuts, and use the app’s Live Tracking or Panic Alert to inform trusted contacts."
+ },
+ {
+  "question": "Does the app work offline in emergencies?",
+  "answer": "Core features like flashlight, alarm sound, and emergency contact access are available offline. Live location needs connectivity."
+ },
+ {
+  "question": "Can I pre-register emergency contacts?",
+  "answer": "Yes, go to Settings > Emergency Contacts to add and manage up to 5 trusted people."
+ },
+ {
+  "question": "How can I stay safe when traveling alone at night?",
+  "answer": "Stick to busy streets, avoid distractions like headphones, share your live location, and carry a safety tool if possible."
+ },
+ {
+  "question": "What safety precautions should I take when booking a cab?",
+  "answer": "Confirm the driver and vehicle details, sit in the backseat, and share your trip info with a trusted contact."
+ },
+ {
+  "question": "Should I post my location on social media in real-time?",
+  "answer": "It’s safer to post updates after you’ve left the location to avoid attracting unwanted attention."
+ },
+ {
+  "question": "How can I make my home safer?",
+  "answer": "Install secure locks, motion sensor lights, and inform someone you trust if you’re home alone."
+ },
+ {
+  "question": "What should I carry for safety when going out?",
+  "answer": "Carry a whistle, pepper spray, and keep your phone charged with emergency contacts saved."
+ },
+ {
+  "question": "What are my rights if I face harassment at work?",
+  "answer": "You have the right to file a complaint with your company's internal complaints committee or a local legal authority."
+ },
+ {
+  "question": "Can I report cyber harassment?",
+  "answer": "Yes, you can report it through your local cybercrime cell or online grievance portals."
+ },
+ {
+  "question": "Is stalking a punishable offense?",
+  "answer": "Yes, stalking is a criminal offense under various laws and can be reported to the police."
+ },
+ {
+  "question": "How do I file an FIR?",
+  "answer": "Visit the nearest police station and provide a detailed written complaint. You can also file it online in some states."
+ },
+ {
+  "question": "Can I get legal help through the app?",
+  "answer": "Yes, the app provides access to helplines and connects you with free legal aid services."
+ },
+ {
+  "question": "How does the live tracking feature work?",
+  "answer": "Once activated, the app shares your real-time location with selected contacts until you stop it manually."
+ },
+ {
+  "question": "How do I use the SOS feature?",
+  "answer": "Press and hold the SOS button to send an alert with your location and message to emergency contacts."
+ },
+ {
+  "question": "Can I test the emergency features?",
+  "answer": "Yes, there's a Test Mode in Settings to simulate alerts and become familiar with the features."
+ },
+ {
+  "question": "Is my location data safe?",
+  "answer": "Yes, your data is encrypted and shared only with trusted contacts or emergency services with your consent."
+ },
+ {
+  "question": "Can I customize the alert message?",
+  "answer": "Yes, you can edit your emergency message in the app settings under 'Alert Preferences'."
+ },
+ {
+  "question": "What’s the best way to escape from a wrist grab?",
+  "answer": "Pull your hand in the direction of the attacker’s thumb while stepping back and yelling for help."
+ },
+ {
+  "question": "Should I carry a safety tool?",
+  "answer": "Yes, non-lethal tools like pepper spray, personal alarms, or kubotans can help in emergencies."
+ },
+ {
+  "question": "Can I learn self-defense through the app?",
+  "answer": "Yes, the app offers basic video tutorials and tips for real-life scenarios."
+ },
+ {
+  "question": "Where should I aim if I need to defend myself?",
+  "answer": "Target vulnerable areas like the eyes, nose, throat, or groin for maximum impact."
+ },
+ {
+  "question": "What should I do if someone grabs me from behind?",
+  "answer": "Use your elbows to hit their ribs or stomach, stomp their feet, and try to break free while yelling loudly."
+ },
+ {
+  "question": "What if I feel anxious after a scary incident?",
+  "answer": "Try breathing exercises, talk to a friend, or use the app’s mental health resources for support."
+ },
+ {
+  "question": "Does the app offer counseling support?",
+  "answer": "Yes, you can access licensed counselors through in-app chat or book a session."
+ },
+ {
+  "question": "How can I calm myself during panic?",
+  "answer": "Practice slow breathing, count backwards, and focus on grounding techniques like noticing five things around you."
+ },
+ {
+  "question": "Is it normal to feel scared after harassment?",
+  "answer": "Yes, it's a natural response. You're not alone, and talking to someone can help you feel supported."
+ },
+ {
+  "question": "Can I talk anonymously to someone?",
+  "answer": "Absolutely. The app supports anonymous chats with mental health professionals and peer listeners."
+ },
+ {
+  "question": "What should I do if someone tries to enter my home forcefully?",
+  "answer": "Lock yourself in a secure room, call the police immediately, and use the app's emergency alert system."
+ },
+ {
+  "question": "Can I activate the SOS without unlocking my phone?",
+  "answer": "Yes, you can enable quick-access gestures like pressing the power button multiple times to trigger SOS."
+ },
+ {
+  "question": "Does the app record audio during an emergency?",
+  "answer": "Yes, if enabled, the app records audio and sends it with your location to emergency contacts."
+ },
+ {
+  "question": "What happens after I press the SOS button?",
+  "answer": "The app alerts your emergency contacts, sends your location, and optionally notifies local law enforcement."
+ },
+ {
+  "question": "Can I cancel a false SOS alert?",
+  "answer": "Yes, you can cancel it within a few seconds or notify your contacts via a follow-up message."
+ },
+ {
+  "question": "How can I discreetly use the app in a threatening situation?",
+  "answer": "Use the stealth mode which activates emergency features with minimal screen visibility or vibration patterns."
+ },
+ {
+  "question": "Will the app work abroad?",
+  "answer": "It works globally with internet access, but emergency services may differ by country."
+ },
+ {
+  "question": "Can I use voice command to trigger an alert?",
+  "answer": "Yes, you can set up a custom keyword to activate emergency features using voice."
+ },
+ {
+  "question": "What if I lose network during an emergency?",
+  "answer": "The app will attempt to send alerts once the connection is restored, and offline tools like alarm and flashlight remain available."
+ },
+ {
+  "question": "Does the app notify my family in case of an accident?",
+  "answer": "Yes, the app can auto-detect falls or accidents and notify your emergency contacts."
+ },
+ {
+  "question": "What are signs someone might be following me?",
+  "answer": "Frequent appearance of the same person or vehicle, especially across different locations."
+ },
+ {
+  "question": "How can I protect my drink at public places?",
+  "answer": "Never leave it unattended, use drink covers, and avoid accepting drinks from strangers."
+ },
+ {
+  "question": "Should I share my ride details?",
+  "answer": "Yes, always share your live location or ride info with a trusted person."
+ },
+ {
+  "question": "What’s a safety exit plan at events?",
+  "answer": "Identify exits on arrival, stay near friends, and avoid crowded or poorly lit areas."
+ },
+ {
+  "question": "How to stay safe in a crowd?",
+  "answer": "Keep your belongings secure, stay aware of exits, and avoid pushing or shoving."
+ },
+ {
+  "question": "Is it safe to meet someone I met online?",
+  "answer": "Meet in public places during the day and inform a friend beforehand."
+ },
+ {
+  "question": "What if I lose my phone in a public place?",
+  "answer": "Use remote tracking, inform trusted contacts, and report it to the police if needed."
+ },
+ {
+  "question": "How can I stay safe while jogging alone?",
+  "answer": "Use well-lit paths, avoid loud music, and share your route with someone."
+ },
+ {
+  "question": "Are safety apps helpful when traveling?",
+  "answer": "Yes, they offer real-time location sharing, emergency alerts, and local assistance info."
+ },
+ {
+  "question": "How to handle aggressive strangers?",
+  "answer": "Stay calm, avoid confrontation, move toward a safe space, and call for help if needed."
+ },
+ {
+  "question": "Can I report domestic violence anonymously?",
+  "answer": "Yes, many helplines and online portals allow anonymous reporting."
+ },
+ {
+  "question": "What rights do I have during a police investigation?",
+  "answer": "You have the right to remain silent, have a lawyer, and avoid self-incrimination."
+ },
+ {
+  "question": "Is verbal abuse considered a crime?",
+  "answer": "Yes, if it's threatening, harassing, or causes emotional harm, it may be legally actionable."
+ },
+ {
+  "question": "Can I seek restraining orders through the app?",
+  "answer": "While the app can’t file orders, it guides you on how to apply through legal channels."
+ },
+ {
+  "question": "What documents are needed to file a harassment case?",
+  "answer": "Usually ID proof, incident details, witness statements, and any supporting evidence."
+ },
+ {
+  "question": "Are there free legal aid services available?",
+  "answer": "Yes, the app lists free legal aid centers and NGO support networks."
+ },
+ {
+  "question": "Can I refuse to go with police without a warrant?",
+  "answer": "Yes, unless you’re being arrested with cause. Always ask for identification and reason."
+ },
+ {
+  "question": "How long do I have to report a crime?",
+  "answer": "There's no strict limit for many crimes, but reporting early helps the case."
+ },
+ {
+  "question": "What’s the punishment for sexual harassment?",
+  "answer": "It varies by region but can include fines, imprisonment, or both depending on severity."
+ },
+ {
+  "question": "Can the app connect me with a lawyer?",
+  "answer": "Yes, it includes contact info for local legal support and legal aid providers."
+ },
+ {
+  "question": "Can I share my route with someone?",
+  "answer": "Yes, enable Route Share to send your planned path and live updates to trusted contacts."
+ },
+ {
+  "question": "Does the app notify if I deviate from a route?",
+  "answer": "Yes, Smart Tracking alerts your contacts if you stray from a set path."
+ },
+ {
+  "question": "Is there a loud alarm feature?",
+  "answer": "Yes, you can activate a loud alarm to draw public attention during emergencies."
+ },
+ {
+  "question": "How do I update my emergency contacts?",
+  "answer": "Go to Settings > Emergency Contacts and edit, add, or remove people anytime."
+ },
+ {
+  "question": "Can I disable location sharing temporarily?",
+  "answer": "Yes, you can pause location updates and restart them whenever needed."
+ },
+ {
+  "question": "What if I accidentally hit the SOS button?",
+  "answer": "You’ll have a brief window to cancel the alert before it’s sent."
+ },
+ {
+  "question": "Can I view my alert history?",
+  "answer": "Yes, Alert History logs all emergency events, messages, and location shares."
+ },
+ {
+  "question": "Is the app available in multiple languages?",
+  "answer": "Yes, you can choose your preferred language from the settings menu."
+ },
+ {
+  "question": "Does the app drain battery quickly?",
+  "answer": "No, it's optimized for low power consumption during background operation."
+ },
+ {
+  "question": "Can I sync the app with wearables?",
+  "answer": "Yes, it supports integration with certain smartwatches and wearables."
+ },
+ {
+  "question": "What should I yell in an emergency?",
+  "answer": "Shout specific words like 'Fire!' or 'Help!' to attract attention."
+ },
+ {
+  "question": "Is martial arts training helpful?",
+  "answer": "Yes, it builds confidence and teaches techniques for real-world defense."
+ },
+ {
+  "question": "What is situational awareness?",
+  "answer": "Being aware of your surroundings and identifying potential threats early."
+ },
+ {
+  "question": "How do I break free from a choke hold?",
+  "answer": "Tuck your chin, raise your arms, and push off using your shoulder or elbow."
+ },
+ {
+  "question": "Should I run or fight back?",
+  "answer": "Run if you can. If not, fight with quick, decisive strikes to escape."
+ },
+ {
+  "question": "Can keys be used as a weapon?",
+  "answer": "Yes, grip them between your fingers and use them for jabbing motions."
+ },
+ {
+  "question": "How do I use pepper spray safely?",
+  "answer": "Aim for the eyes, use short bursts, and then flee immediately."
+ },
+ {
+  "question": "What should I wear for personal safety?",
+  "answer": "Avoid loose accessories at night and wear shoes you can move quickly in."
+ },
+ {
+  "question": "Is it okay to scream in public if threatened?",
+  "answer": "Absolutely. Drawing attention can scare off the attacker and alert help."
+ },
+ {
+  "question": "Can I learn defense tactics online?",
+  "answer": "Yes, many verified channels and this app provide reliable tutorials."
+ },
+ {
+  "question": "What can I do if I feel unsafe but nothing has happened yet?",
+  "answer": "Trust your instincts, leave the area, and talk to someone you trust or use the app’s chat feature."
+ },
+ {
+  "question": "How do I support a friend who has faced assault?",
+  "answer": "Listen without judgment, believe them, and guide them to support services."
+ },
+ {
+  "question": "Is it okay to take a break after trauma?",
+  "answer": "Yes, healing takes time. Prioritize self-care and mental health."
+ },
+ {
+  "question": "How do I manage flashbacks or triggers?",
+  "answer": "Use grounding exercises like touching nearby objects or repeating calming phrases."
+ },
+ {
+  "question": "Can I find support groups through the app?",
+  "answer": "Yes, the app lists online and local support communities."
+ },
+ {
+  "question": "What are calming techniques during anxiety?",
+  "answer": "Deep breathing, progressive muscle relaxation, or guided imagery can help."
+ },
+ {
+  "question": "How do I ask for help without feeling weak?",
+  "answer": "Asking for help is a strength. Everyone needs support sometimes."
+ },
+ {
+  "question": "What if I feel overwhelmed and can't sleep?",
+  "answer": "Try journaling, light stretching, or listening to calming music before bed."
+ },
+ {
+  "question": "Does trauma affect physical health?",
+  "answer": "Yes, stress and trauma can impact sleep, immunity, and digestion."
+ },
+ {
+  "question": "Can I speak to someone in my native language?",
+  "answer": "Yes, you can choose language preferences for mental health chats in the app."
+ },
+ {
+  "question": "What’s a safe way to handle a car breakdown at night?",
+  "answer": "Stay inside, lock doors, turn on hazard lights, and call roadside or emergency help."
+ },
+ {
+  "question": "Should I let strangers into my home for maintenance?",
+  "answer": "Only if pre-approved, and always verify ID and inform someone before letting them in."
+ },
+ {
+  "question": "How do I verify if a place is safe to visit?",
+  "answer": "Check reviews, use safety rating tools in the app, and inform contacts before going."
+ },
+ {
+  "question": "Is it safe to wear headphones while walking?",
+  "answer": "Avoid full-volume or both-ear headphones to stay aware of your surroundings."
+ },
+ {
+  "question": "What are smart ways to blend in while traveling?",
+  "answer": "Dress modestly, avoid flashy items, and act confidently to deter targeting."
+ },
+ {
+  "question": "Can I trust public Wi-Fi networks?",
+  "answer": "Avoid logging into sensitive accounts; use VPNs for better privacy."
+ },
+ {
+  "question": "How should I respond to catcalling?",
+  "answer": "Avoid engagement, move to a safe area, and report if the situation escalates."
+ },
+ {
+  "question": "What’s a good self-check habit daily?",
+  "answer": "Tell someone your schedule and check in regularly when plans change."
+ },
+ {
+  "question": "Should I use apps to track my walks?",
+  "answer": "Yes, safety apps with route sharing help keep others informed of your movements."
+ },
+ {
+  "question": "How do I deal with unwanted advances in public?",
+  "answer": "Firmly say no, move away, and use the app to alert contacts if it escalates."
+ },
+ {
+  "question": "How do I protect my identity online?",
+  "answer": "Avoid sharing personal details, disable location tagging, and use strong passwords."
+ },
+ {
+  "question": "Can sharing selfies be dangerous?",
+  "answer": "Yes, especially with identifiable locations or background information."
+ },
+ {
+  "question": "What’s a safety habit when staying in hotels?",
+  "answer": "Use additional door locks and avoid revealing your room number publicly."
+ },
+ {
+  "question": "How can I be safe at a party?",
+  "answer": "Stick with trusted friends, keep your drink in sight, and have a plan to leave together."
+ },
+ {
+  "question": "Is it okay to call out unsafe behavior?",
+  "answer": "Yes, when safe. Otherwise, report to a supervisor or authority figure."
+ },
+ {
+  "question": "What’s the benefit of carrying a dummy wallet?",
+  "answer": "It can be used to distract a thief while protecting your real valuables."
+ },
+ {
+  "question": "What apps help with safe travel?",
+  "answer": "Use map apps with live sharing, emergency apps, and location pinning tools."
+ },
+ {
+  "question": "Can I record harassment for evidence?",
+  "answer": "Yes, in many places it’s legal if you’re part of the conversation, but check local laws."
+ },
+ {
+  "question": "Are there laws against workplace stalking?",
+  "answer": "Yes, many regions have anti-stalking laws applicable to workplace environments."
+ },
+ {
+  "question": "What should I do if the police don’t file my complaint?",
+  "answer": "Ask for a written explanation and approach a senior officer or legal help center."
+ },
+ {
+  "question": "Can I get legal help at night?",
+  "answer": "Yes, some helplines and emergency legal aid services operate 24\/7."
+ },
+ {
+  "question": "Is emotional abuse legally punishable?",
+  "answer": "In many jurisdictions, emotional abuse is recognized under domestic violence laws."
+ },
+ {
+  "question": "How can I prove online threats?",
+  "answer": "Take screenshots, record timestamps, and save any related messages or profiles."
+ },
+ {
+  "question": "Are minor girls protected under special laws?",
+  "answer": "Yes, laws often provide extra protection for minors from abuse or harassment."
+ },
+ {
+  "question": "Can my employer fire me for reporting harassment?",
+  "answer": "No, retaliating against a complaint is illegal in many countries."
+ },
+ {
+  "question": "How can I protect my identity in legal filings?",
+  "answer": "You can request anonymity or file through NGOs to protect your name."
+ },
+ {
+  "question": "Are fake accusations punishable?",
+  "answer": "Yes, knowingly filing false charges is also a legal offense in many regions."
+ },
+ {
+  "question": "What if I don't speak the local language?",
+  "answer": "Legal aid centers often provide translation or assign bilingual officers."
+ },
+ {
+  "question": "How do I verify a lawyer’s credentials?",
+  "answer": "Check with the local bar council or request official license documentation."
+ },
+ {
+  "question": "Can I file a report through the app?",
+  "answer": "Some areas allow police reporting via app portals or connected government APIs."
+ },
+ {
+  "question": "Is there protection for whistleblowers?",
+  "answer": "Yes, laws exist to protect individuals who report abuse or corruption."
+ },
+ {
+  "question": "What are my rights during arrest?",
+  "answer": "You have the right to know the reason, remain silent, and request legal representation."
+ },
+ {
+  "question": "Can I file a harassment case from abroad?",
+  "answer": "Yes, through embassies or international legal assistance channels."
+ },
+ {
+  "question": "Can I be forced to settle outside court?",
+  "answer": "No, legal resolution must be voluntary, and coercion is punishable."
+ },
+ {
+  "question": "Does the app have a child safety mode?",
+  "answer": "Yes, it includes kid-safe tracking, geofencing, and emergency call restrictions."
+ },
+ {
+  "question": "Can I assign a safety guardian?",
+  "answer": "Yes, you can nominate a trusted contact as your guardian for live alerts."
+ },
+ {
+  "question": "Does the app show nearby help centers?",
+  "answer": "Yes, it displays police stations, hospitals, and shelters on a map."
+ },
+ {
+  "question": "Can I leave a voice note with alerts?",
+  "answer": "Yes, record a short message that’s sent during an SOS."
+ },
+ {
+  "question": "Can I activate alerts with my smartwatch?",
+  "answer": "Yes, supported smartwatches can trigger app features with a tap or gesture."
+ },
+ {
+  "question": "Does the app work in low-light environments?",
+  "answer": "Yes, it includes a flashlight and high-contrast UI for night use."
+ },
+ {
+  "question": "Can I back up my data?",
+  "answer": "Yes, data is automatically backed up to your secure cloud account."
+ },
+ {
+  "question": "Is there a fake call feature?",
+  "answer": "Yes, you can schedule or trigger fake calls to escape risky situations."
+ },
+ {
+  "question": "Can the app block unknown callers?",
+  "answer": "Yes, the app can auto-block calls from numbers not on your safe list."
+ },
+ {
+  "question": "How do I access safety guides in the app?",
+  "answer": "Go to Resources or Help Center for quick tips and tutorials."
+ },
+ {
+  "question": "Does the app log incidents?",
+  "answer": "Yes, incident logs are time-stamped and stored securely for legal reference."
+ },
+ {
+  "question": "Can I use it on multiple devices?",
+  "answer": "Yes, log in from other devices and sync your profile instantly."
+ },
+ {
+  "question": "Can I track battery usage of the app?",
+  "answer": "Yes, app settings include battery and data optimization tools."
+ },
+ {
+  "question": "Does it support dark mode?",
+  "answer": "Yes, you can switch to dark mode for better nighttime use."
+ },
+ {
+  "question": "Can I share alerts on social media?",
+  "answer": "Yes, alerts can be customized and shared with trusted platforms."
+ },
+ {
+  "question": "What if the app crashes?",
+  "answer": "The core emergency tools have redundancy and restart immediately."
+ },
+ {
+  "question": "Can I access help without logging in?",
+  "answer": "Yes, emergency tools are available on the home screen without login."
+ },
+ {
+  "question": "What’s the first thing to remember in a confrontation?",
+  "answer": "Stay calm, assess the situation, and prepare to defend or escape."
+ },
+ {
+  "question": "Can self-defense be verbal?",
+  "answer": "Yes, assertive communication can deter many attackers."
+ },
+ {
+  "question": "What’s a good self-defense tool to carry?",
+  "answer": "Pepper spray, personal alarms, or a whistle are effective and legal in many places."
+ },
+ {
+  "question": "Where should I strike if grabbed?",
+  "answer": "Aim for vulnerable spots like the eyes, nose, throat, or groin."
+ },
+ {
+  "question": "Is it legal to hit back in self-defense?",
+  "answer": "Yes, reasonable force is often allowed to stop an attack. Check your local laws."
+ },
+ {
+  "question": "How can I practice self-defense?",
+  "answer": "Join local classes or follow trusted online training programs."
+ },
+ {
+  "question": "What’s the best defense if someone grabs your wrist?",
+  "answer": "Twist your wrist toward the attacker’s thumb to break free."
+ },
+ {
+  "question": "Can keys be used for self-defense?",
+  "answer": "Yes, held between your fingers they can act as a striking tool."
+ },
+ {
+  "question": "Is running away a good defense?",
+  "answer": "Yes, escaping is always better than engaging if you can."
+ },
+ {
+  "question": "What should I do if followed at night?",
+  "answer": "Go to a well-lit area, call someone, or activate your safety app."
+ },
+ {
+  "question": "Are stun guns or tasers legal?",
+  "answer": "It depends on your local laws—check before carrying one."
+ },
+ {
+  "question": "How can I defend myself on public transport?",
+  "answer": "Stay alert, avoid isolated seats, and use the emergency button if threatened."
+ },
+ {
+  "question": "Should I fight back if someone has a weapon?",
+  "answer": "Only if escape isn’t possible—your safety comes first."
+ },
+ {
+  "question": "What’s the use of martial arts for women?",
+  "answer": "It builds confidence, improves reflexes, and teaches escape techniques."
+ },
+ {
+  "question": "How do I carry pepper spray safely?",
+  "answer": "Keep it accessible, check expiry dates, and know how to use it quickly."
+ },
+ {
+  "question": "What’s a defensive posture?",
+  "answer": "Stand tall, make eye contact, and use a strong voice—it shows confidence."
+ },
+ {
+  "question": "Is practice really necessary?",
+  "answer": "Yes, regular practice builds muscle memory and fast reactions."
+ },
+ {
+  "question": "What should I do if I feel constantly anxious?",
+  "answer": "Try grounding techniques, talk to a friend, or seek professional help."
+ },
+ {
+  "question": "How can I deal with fear after an incident?",
+  "answer": "Therapy, journaling, and support groups can help process trauma."
+ },
+ {
+  "question": "Is it normal to feel guilty after harassment?",
+  "answer": "Yes, but it’s not your fault. Support and counseling can help."
+ },
+ {
+  "question": "What’s a grounding technique?",
+  "answer": "Simple actions like touching objects, deep breathing, or listing 5 things you see."
+ },
+ {
+  "question": "Can I talk to someone anonymously?",
+  "answer": "Yes, many mental health apps and helplines offer anonymous chat support."
+ },
+ {
+  "question": "How do I help a friend who’s scared to go out?",
+  "answer": "Listen without judgment, offer to accompany them, and suggest counseling."
+ },
+ {
+  "question": "Are there affirmations for confidence?",
+  "answer": "Yes, positive statements can help reframe negative thoughts over time."
+ },
+ {
+  "question": "Can mental health affect physical safety?",
+  "answer": "Yes, anxiety or depression can cloud judgment—getting support is crucial."
+ },
+ {
+  "question": "What’s the first step to self-care?",
+  "answer": "Start with rest, healthy meals, hydration, and doing something you enjoy."
+ },
+ {
+  "question": "What’s the role of therapy after trauma?",
+  "answer": "It helps you process, heal, and develop coping strategies."
+ },
+ {
+  "question": "How can I build emotional resilience?",
+  "answer": "By practicing gratitude, setting boundaries, and seeking connection."
+ },
+ {
+  "question": "Is it okay to cry or feel angry?",
+  "answer": "Absolutely. Emotions are natural responses and should be expressed safely."
+ },
+ {
+  "question": "Can I take mental health breaks?",
+  "answer": "Yes, regular short breaks help manage stress and improve focus."
+ },
+ {
+  "question": "Are meditation and yoga helpful?",
+  "answer": "Yes, they reduce stress, improve mood, and increase body awareness."
+ },
+ {
+  "question": "How do I know if I need professional help?",
+  "answer": "If distress affects daily life or lasts long, seek support from a mental health expert."
+ },
+ {
+  "question": "What’s the importance of journaling?",
+  "answer": "It helps release thoughts, recognize patterns, and track your emotional state."
+ },
+ {
+  "question": "Can I recover from trauma fully?",
+  "answer": "Yes, with time, support, and the right help, healing is absolutely possible."
+ },
+ {
+  "question": "How can I quickly alert someone if I'm in danger?",
+  "answer": "You can use the emergency SOS feature in the app to instantly alert your emergency contacts and share your location."
+ },
+ {
+  "question": "Can I call the police directly from the app?",
+  "answer": "Yes, there is a quick-access button in the app that lets you call the police with a single tap."
+ },
+ {
+  "question": "What should I do if I feel I'm being followed?",
+  "answer": "Stay in well-lit, public areas and use the app to alert a friend or contact nearby. You can also activate the SOS feature."
+ },
+ {
+  "question": "How do I add emergency contacts in the app?",
+  "answer": "Go to the app settings, select 'Emergency Contacts', and add the phone numbers of people you trust."
+ },
+ {
+  "question": "Will my emergency contact get my location automatically?",
+  "answer": "Yes, when you trigger an SOS alert, your live location is shared with your chosen contacts."
+ },
+ {
+  "question": "Is the SOS feature available offline?",
+  "answer": "The SOS feature needs a mobile signal or internet connection to send alerts. Make sure you have connectivity when using it."
+ },
+ {
+  "question": "Can I cancel an emergency alert if it was sent by mistake?",
+  "answer": "Yes, you can cancel the alert within 10 seconds. After that, a message will be sent to your emergency contacts."
+ },
+ {
+  "question": "How loud is the alarm sound in the app?",
+  "answer": "The app triggers a loud siren sound to draw attention and scare away potential threats."
+ },
+ {
+  "question": "Can I alert someone silently?",
+  "answer": "Yes, you can choose the silent SOS option in settings, which sends alerts without making noise."
+ },
+ {
+  "question": "What if I can’t speak during an emergency?",
+  "answer": "The app can send a predefined message along with your location to your contacts without needing you to speak."
+ },
+ {
+  "question": "How many emergency contacts can I add?",
+  "answer": "You can add up to 5 emergency contacts in the app."
+ },
+ {
+  "question": "Does the app work in any city?",
+  "answer": "Yes, the app is designed to work across all cities in India where there is mobile network coverage."
+ },
+ {
+  "question": "What if my battery is low during an emergency?",
+  "answer": "Try to conserve battery by closing other apps. The safety app is optimized for low battery use."
+ },
+ {
+  "question": "Can I test the SOS feature?",
+  "answer": "Yes, there's a 'Test Mode' available under settings so you can practice using it without alerting anyone."
+ },
+ {
+  "question": "Is my location shared only during emergencies?",
+  "answer": "Yes, your location is only shared when you activate the SOS or location sharing feature."
+ },
+ {
+  "question": "Can the app alert nearby users for help?",
+  "answer": "In some areas, the app notifies verified users nearby who can assist or report the incident."
+ },
+ {
+  "question": "Can I use voice commands to trigger SOS?",
+  "answer": "Yes, you can enable voice trigger in settings and assign a phrase like 'Help me' to activate it."
+ },
+ {
+  "question": "How fast are emergency alerts sent?",
+  "answer": "Alerts are sent within 1-2 seconds after activation, depending on your network speed."
+ },
+ {
+  "question": "What if my contact doesn’t respond?",
+  "answer": "The app continues trying and will alert all added contacts. You can also set it to auto-call local helplines."
+ },
+ {
+  "question": "Can I see when my emergency contact views my alert?",
+  "answer": "Yes, the app shows a delivery and read status so you know who has seen your alert."
+ },
+ {
+  "question": "What are some basic tips for staying safe in public?",
+  "answer": "Stay aware of your surroundings, avoid using your phone while walking, and stick to well-lit areas."
+ },
+ {
+  "question": "Is it okay to share my travel plans online?",
+  "answer": "It's best to avoid sharing travel plans publicly. Only inform people you trust."
+ },
+ {
+  "question": "How can I make my home safer?",
+  "answer": "Install good locks, keep entryways lit, and avoid opening the door to strangers without verifying their identity."
+ },
+ {
+  "question": "Should I carry any safety items when going out?",
+  "answer": "Yes, items like pepper spray, a whistle, or a safety app on your phone can be very helpful."
+ },
+ {
+  "question": "How can I stay safe when using public transport?",
+  "answer": "Sit near the driver or other passengers, avoid isolated compartments, and inform someone about your journey."
+ },
+ {
+  "question": "What should I avoid when walking alone at night?",
+  "answer": "Avoid dark alleys, shortcuts through deserted areas, and keep your phone charged and accessible."
+ },
+ {
+  "question": "Is it safe to accept help from strangers?",
+  "answer": "Use your judgment. If you're unsure, stay in public areas or seek help from official personnel."
+ },
+ {
+  "question": "How can I stay safe while shopping alone?",
+  "answer": "Be cautious of your belongings, avoid carrying too much cash, and be aware of your surroundings."
+ },
+ {
+  "question": "What should I do if a stranger makes me uncomfortable?",
+  "answer": "Move to a crowded area, alert someone nearby, and use your safety app to contact someone you trust."
+ },
+ {
+  "question": "Is it safe to use ride-sharing apps?",
+  "answer": "Yes, but always check the driver's details, share your trip with a contact, and sit in the back seat."
+ },
+ {
+  "question": "How can I stay safe while jogging or exercising outdoors?",
+  "answer": "Choose well-lit, busy areas, avoid using headphones, and let someone know your route and time."
+ },
+ {
+  "question": "Should I be cautious about what I wear?",
+  "answer": "Wear whatever makes you comfortable. Your safety is not determined by your clothing. Stay confident and aware."
+ },
+ {
+  "question": "How can I stay alert in unfamiliar places?",
+  "answer": "Research the area, keep your phone charged, and avoid engaging with suspicious people."
+ },
+ {
+  "question": "What if someone tries to follow me?",
+  "answer": "Enter a nearby shop or public place, call a trusted contact, or use the SOS feature in your app."
+ },
+ {
+  "question": "How can I protect myself from online safety threats?",
+  "answer": "Use strong passwords, avoid sharing personal details, and be cautious of suspicious messages or links."
+ },
+ {
+  "question": "Should I trust everyone at social gatherings?",
+  "answer": "Be friendly but cautious. Stick with friends, watch your drink, and leave if something feels wrong."
+ },
+ {
+  "question": "What should I do if I get lost in a new city?",
+  "answer": "Stay calm, use a navigation app, ask for help in public places, and contact someone you trust."
+ },
+ {
+  "question": "Is it okay to confront someone who’s harassing me?",
+  "answer": "If safe, be assertive and say ‘No’ loudly. Otherwise, seek help immediately and leave the area."
+ },
+ {
+  "question": "How can I make solo travel safer?",
+  "answer": "Plan ahead, share your itinerary, stay in well-reviewed places, and use trusted transport options."
+ },
+ {
+  "question": "What if I feel unsafe but don’t want to overreact?",
+  "answer": "Trust your instincts. It’s always better to be cautious than regretful—reach out for help if needed."
+ }
+]

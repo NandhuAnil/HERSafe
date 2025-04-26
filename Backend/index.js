@@ -5,6 +5,9 @@ import cors from "cors";
 import { connectDB } from "./db/connectDB.js";
 import authRoutes from './routers/auth.routes.js';
 import userRoutes from './routers/user.routes.js';
+import chatbotRoutes from './routers/chatbot.routes.js';
+import sosRoutes from './routers/sos.routes.js';
+import contactRoutes from './routers/contact.routes.js';
 
 dotenv.config();
 
@@ -31,6 +34,12 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 
 app.use("/api/users", userRoutes);
+
+app.use('/api/chatbot', chatbotRoutes);
+
+app.use('/api/sos', sosRoutes);
+
+app.use('/api', contactRoutes);
 
 app.listen(PORT, () => {
   connectDB();
