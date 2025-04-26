@@ -15,7 +15,7 @@ import { Colors } from "@/constants/Colors";
 import { Ionicons } from "@expo/vector-icons";
 import Checkbox from "expo-checkbox";
 import { useRouter } from "expo-router";
-// import useAuth from "@/hooks/Auth.services";
+import useAuth from "@/hooks/Auth.services";
 
 export default function signup() {
   const router = useRouter();
@@ -23,7 +23,7 @@ export default function signup() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [confirmPassword, setConfirmPassword] = useState<string>("");
-  // const { handleSignup, loading } = useAuth();
+  const { handleSignup, loading } = useAuth();
   const [isPasswordShown, setIsPasswordShown] = useState(false);
   const [isPasswordShown1, setIsPasswordShown1] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
@@ -50,7 +50,7 @@ export default function signup() {
       return;
     }
 
-    // handleSignup(name, email, password);
+    handleSignup(name, email, password);
   };
 
   return (
@@ -282,7 +282,7 @@ export default function signup() {
           <TouchableOpacity
             style={[styles.button]}
             onPress={onSubmit}
-            // disabled={loading}
+            disabled={loading}
             activeOpacity={0.7}
           >
             <Text style={styles.buttonText}>Sign Up</Text>

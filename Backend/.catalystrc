@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "17705000000010077",
+      "name": "HERSafe",
+      "domain": {
+        "id": "50026188699",
+        "name": "hersafe-60040458047.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60040458047",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

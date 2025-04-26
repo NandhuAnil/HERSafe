@@ -11,11 +11,11 @@ const CustomButton: React.FC<{
     <Pressable
       style={[
         styles.button,
-        mode === "outlined" && { backgroundColor: Colors.light.primary },
+        mode === "outlined" && { backgroundColor: Colors.primary },
       ]}
       onPress={onPress}
     >
-      <Text style={[styles.buttonText,mode === "outlined" && { color: Colors.light.background },]}>{title}</Text>
+      <Text style={[styles.buttonText,mode === "outlined" && { color: Colors.background },]}>{title}</Text>
     </Pressable>
   );
 };
@@ -28,14 +28,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 50,
-    borderColor: Colors.light.primary,
+    borderColor: Colors.primary,
     borderWidth: 1,
   },
   buttonText: {
     fontWeight: "bold",
     fontSize: 15,
     lineHeight: 26,
-    color: Colors.light.primary
+    color: Colors.primary
   },
 });
 
