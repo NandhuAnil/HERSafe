@@ -1,5 +1,5 @@
 import { Colors } from '@/constants/Colors';
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, Feather, FontAwesome5 } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import React from 'react';
 
@@ -24,6 +24,24 @@ export default function TabLayout() {
           title: 'Home',
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="home" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="virtualschedule"
+        options={{
+          title: 'Virtual conselling',
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="videocamera" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="booking"
+        options={{
+          title: 'My Booking',
+          tabBarIcon: ({ color, size }) => (
+            <Feather name="clipboard" size={size} color={color} />
           ),
         }}
       />

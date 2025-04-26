@@ -8,6 +8,7 @@ import userRoutes from './routers/user.routes.js';
 import chatbotRoutes from './routers/chatbot.routes.js';
 import sosRoutes from './routers/sos.routes.js';
 import contactRoutes from './routers/contact.routes.js';
+import bookingRoutes from './routers/booking.routes.js';
 
 dotenv.config();
 
@@ -40,6 +41,8 @@ app.use('/api/chatbot', chatbotRoutes);
 app.use('/api/sos', sosRoutes);
 
 app.use('/api', contactRoutes);
+
+app.use("/api/booking", bookingRoutes);
 
 app.listen(PORT, () => {
   connectDB();
