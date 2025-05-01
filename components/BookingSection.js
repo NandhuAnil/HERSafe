@@ -60,14 +60,14 @@ const BookingSection = ({ counselorData }) => {
   }
 
   const onSubmit = () => {
-    if (!currentUser.name || !currentUser.email || !selectedDate || !selectedTime || !counselorData?.counselorName) {
+    if (!currentUser.name || !counselorData.email || !selectedDate || !selectedTime || !counselorData?.counselorName) {
       ToastAndroid.show('All fields are required', ToastAndroid.SHORT);
       return;
     }
 
     setIsSubmitting(true);
 
-    createBooking(currentUser.name, currentUser.email, selectedDate, selectedTime, counselorData.counselorName, notes)
+    createBooking(currentUser.name, counselorData.email, selectedDate, selectedTime, counselorData.counselorName, notes)
       .then(() => {
         ToastAndroid.show('Appointment booked successfully!', ToastAndroid.SHORT);
         setIsSubmitting(false);

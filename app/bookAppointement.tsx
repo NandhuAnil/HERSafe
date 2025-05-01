@@ -10,6 +10,7 @@ interface CounselorData {
   contact: string;
   city: string;
   image: string;
+  email: string;
 }
 
 export default function bookAppointment() {

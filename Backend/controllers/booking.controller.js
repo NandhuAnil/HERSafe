@@ -1,4 +1,5 @@
 import Booking from "../models/booking.model.js";
+import transporter from "../config/emailConfig.js"
 
 export const createBooking = async (req, res) => {
   try {
@@ -25,9 +26,26 @@ export const createBooking = async (req, res) => {
 
     await booking.save();
 
+    // Send confirmation email
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: email,
+      subject: 'HERSafe conselling request',
+      html: `
+        <h3>Hello ${virtualCounselling},</h3>
+        <p>Request for the counselling.</p>
+        <p><strong>Date:</strong> ${date}</p>
+        <p><strong>Time:</strong> ${time}</p>
+        ${note ? `<p><strong>Note:</strong> ${note}</p>` : ''}
+        <p>Thank you for choosing us!</p>
+      `,
+    };
+
+    await transporter.sendMail(mailOptions);
+
     return res.status(201).json({
       success: true,
-      message: 'Booking created successfully',
+      message: 'Booking created and confirmation email sent successfully',
       booking,
     });
   } catch (error) {
