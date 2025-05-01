@@ -31,6 +31,11 @@ const categoryList: {
       icon: "settings",
       title: "SOS Settings",
     },
+    {
+      id: 2,
+      icon: "question-answer",
+      title: "FAQ",
+    },
   ];
 
 const user = {
@@ -135,6 +140,8 @@ export default function profile() {
               onPress={() => {
                 if (index === 1) {
                   router.push('/sossetting'); 
+                } else if (index === 2) {
+                  router.push('/chatbot'); 
                 } else {
                   Alert.alert("Feature Coming Soon", "This feature is currently under development. Stay tuned for updates!"); // Show alert for other indices
                 }

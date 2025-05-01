@@ -48,7 +48,7 @@ export default function RootLayout() {
       >
         <Stack.Screen name="(auth)" options={{ headerShown: false }} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="chatbot" options={{ headerShown: false }} />
+        <Stack.Screen name="chatbot" options={{ headerShown: true, headerTitle: "FAQ" }} />
         <Stack.Screen name="sossetting" options={{ headerShown: true }} />
         <Stack.Screen name="gemini" options={{ headerShown: true, headerTitle: "Chat Assistant" }} />
         <Stack.Screen name="+not-found" />
