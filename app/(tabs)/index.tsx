@@ -7,10 +7,11 @@ import { Alert, Dimensions, Image, ScrollView, StyleSheet, Text, ToastAndroid, T
 const { width, height } = Dimensions.get('window');
 import * as Location from 'expo-location';
 import { LinearGradient } from 'expo-linear-gradient';
+import Wave from '@/scripts/wave';
 
 const user = {
   imageUrl: "",
-  fullName: "Lara",
+  fullName: "Dora",
 };
 
 type Location = {
@@ -102,52 +103,50 @@ export default function HomeScreen() {
         body: JSON.stringify(payload),
       });
 
-      // Check if the response is not OK (status code not in the range 200-299)
       if (!response.ok) {
-        // Log the response status and the body content for further debugging
-        const text = await response.text();
-        console.log('Server error status:', response.status);
-        console.log('Server error response body:', text);
         setLoading(false);
         Alert.alert('Error', `Server returned an error: ${response.status}. Check logs for details.`);
         return;
       }
-
-      // Get raw response text to check the content
       const text = await response.text();
       console.log('Raw response:', text);
 
       let data;
       try {
-        // Try to parse the response as JSON
         data = JSON.parse(text);
       } catch (error: any) {
         console.log('Error parsing response as JSON:', error.message);
         setLoading(false);
-        Alert.alert('Error', 'Failed to parse server response');
+        ToastAndroid.show('Failed to parse server response', ToastAndroid.SHORT);
         return;
       }
-
       setLoading(false);
-
-      // Handle the response data
       if (data.success) {
-        Alert.alert('SOS sent successfully');
-        console.log('SOS Alert sent successfully!');
-        // Log receiver details (mobile number, email, etc.) from contacts
-        contacts.forEach(contact => {
-          console.log(`Receiver Contact - Mobile: ${contact.phone}, Email: ${contact.email}`);
-        });
+        ToastAndroid.show('SOS sent successfully', ToastAndroid.SHORT);
       } else {
         Alert.alert('Error sending SOS alert', data.message || 'Unknown error');
       }
-
     } catch (error: any) {
       setLoading(false);
-      console.log('Error sending SOS alert:', error.message);
       Alert.alert('Error', 'An unexpected error occurred while sending SOS alert');
     }
   };
+  const confirmAndSendSOS = () => {
+    Alert.alert(
+      'Confirm SOS',
+      'Are you sure you want to send an SOS alert to your contacts?',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Send',
+          style: 'destructive',
+          onPress: handleSendSOS,
+        },
+      ],
+      { cancelable: true }
+    );
+  };
+  
 
   return (
     <View style={{ flex: 1 }}>
@@ -175,17 +174,19 @@ export default function HomeScreen() {
                 alignItems: "center",
               }}
             >
-              <Image
-                source={
-                  photoURL
-                    ? { uri: photoURL }
-                    : { uri: generateAvatarUrl(currentUser?.name || user.fullName) }
-                }
-                style={{ width: 45, height: 45, borderRadius: 99 }}
-              />
+              <TouchableOpacity onPress={() => router.push("/(tabs)/profile")}>
+                <Image
+                  source={
+                    photoURL
+                      ? { uri: photoURL }
+                      : { uri: generateAvatarUrl(currentUser?.name || user.fullName) }
+                  }
+                  style={{ width: 45, height: 45, borderRadius: 99 }}
+                />
+              </TouchableOpacity>
               <View>
                 <Text style={{ fontFamily: "appFont", color: Colors.white }}>
-                  Hello, 👋
+                  Welcome back, 👋
                 </Text>
                 <Text
                   style={{
@@ -205,31 +206,34 @@ export default function HomeScreen() {
         </View>
         <Text style={{ textAlign: 'center', fontSize: 32, fontWeight: 900, color: Colors.primary, top: 80 }}>HERSafe</Text>
         <Text style={{ textAlign: 'center', fontSize: 18, fontWeight: 500, color: Colors.black, top: 80 }}>Press the button in <Text style={{ color: Colors.secondary }}>Emergency</Text></Text>
-        <TouchableOpacity
-          onPress={handleSendSOS}
-          style={styles.sosButtonStyle}
-          disabled={loading}
-          activeOpacity={0.8}
-        >
-          <LinearGradient
-            colors={['#FFEB3B', '#F44336']}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 1 }}
-            style={styles.buttonWrapper}
-          >
-            {loading ? (
-              <Text style={styles.buttonText}>Sending...</Text>
-            ) : (
-              <Text style={styles.buttonText}>emergency SOS</Text>
-            )}
-          </LinearGradient>
-        </TouchableOpacity>
+        <View style={{ justifyContent: 'center', alignItems: 'center', top: 120 }}>
+          <Wave />
+          <TouchableOpacity
+            onPress={confirmAndSendSOS}
+            style={styles.sosButtonStyle}
+            disabled={loading}
+            activeOpacity={0.8}
+            >
+            <LinearGradient
+              colors={['#ff4e50', '#f9d423']}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 1 }}
+              style={styles.buttonWrapper}
+            >
+              {loading ? (
+                <Text style={styles.buttonText}>Sending...</Text>
+              ) : (
+                <Text style={styles.buttonText}>emergency SOS</Text>
+              )}
+            </LinearGradient>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
       <TouchableOpacity
-        onPress={() => router.push("/chatbot")}
+        onPress={() => router.push("/gemini")}
         style={styles.floatingButton}
       >
-        <Ionicons name="chatbubbles" size={28} color="#fff" />
+        <Ionicons name="chatbubbles-outline" size={28} color="#fff" />
       </TouchableOpacity>
     </View>
   );
@@ -265,7 +269,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     shadowRadius: 15,
     alignSelf: 'center',
-    top: 120,
+    // top: 120,
     overflow: 'hidden',
   },
   buttonWrapper: {

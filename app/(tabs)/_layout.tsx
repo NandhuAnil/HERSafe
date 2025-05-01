@@ -30,7 +30,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="virtualschedule"
         options={{
-          title: 'Virtual conselling',
+          title: 'Virtual consellers',
+          headerShown: true,
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="videocamera" size={size} color={color} />
           ),
@@ -40,6 +41,7 @@ export default function TabLayout() {
         name="booking"
         options={{
           title: 'My Booking',
+          headerShown: true,
           tabBarIcon: ({ color, size }) => (
             <Feather name="clipboard" size={size} color={color} />
           ),

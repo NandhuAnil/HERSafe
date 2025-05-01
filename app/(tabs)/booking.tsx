@@ -32,10 +32,6 @@ export default function Booking() {
 
   return (
     <View style={{ padding: 20, marginTop: 20 }}>
-      <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 5 }}>
-        <Text style={{ fontSize: 25, fontFamily: 'appFont-semibold' }}>My Appointments</Text>
-      </View>
-
       <FlatList
         data={appointments}
         keyExtractor={(item) => item._id.toString()}
@@ -43,6 +39,11 @@ export default function Booking() {
         renderItem={({ item }) => (
           <AppointementCard appointment={item} />
         )}
+        ListEmptyComponent={
+          <Text style={{ textAlign: 'center' }}>
+            No bookings available
+          </Text>
+        }
       />
     </View>
   );

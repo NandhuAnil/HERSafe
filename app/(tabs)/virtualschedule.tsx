@@ -86,10 +86,7 @@ export default function virtualschedule() {
     };
 
     return (
-        <View style={{ flex: 1, padding: 20, marginTop: 20 }}>
-            <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 5 }}>
-                <Text style={{ fontSize: 25, fontFamily: 'appFont-semibold' }}>Virtual consellers</Text>
-            </View>
+        <View style={{ flex: 1, padding: 20 }}>
             <FlatList
                 data={counselors}
                 keyExtractor={(item, index) => index.toString()}
